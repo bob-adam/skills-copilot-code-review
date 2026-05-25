@@ -219,6 +219,6 @@ initial_announcements = [
         "_id": "announcement-registration-open",
         "message": "Activity registration is open until the end of the month. Don't lose your spot!",
         "starts_on": None,
-        "expires_on": "2026-05-31"
+        "expires_on": "2099-12-31"
     }
 ]
