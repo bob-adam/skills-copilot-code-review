@@ -533,7 +533,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       if (!response.ok) {
         showAdminAnnouncementMessage(
-          payload.detail || "Could not save announcement.",
+          "Could not save announcement.",
           "error"
         );
         return;
