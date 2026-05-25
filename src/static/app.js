@@ -465,7 +465,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const payload = await response.json();
       if (!response.ok) {
         showAdminAnnouncementMessage(
-          payload.detail || "Unable to load announcements.",
+          "Unable to load announcements.",
           "error"
         );
         return;
