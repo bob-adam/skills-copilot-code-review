@@ -133,11 +133,15 @@ def update_announcement(
         if starts_on > expires_on:
             raise HTTPException(status_code=400, detail="starts_on cannot be later than expires_on")
 
+    message = payload.message.strip()
+    if len(message) < 5:
+        raise HTTPException(status_code=400, detail="message must be at least 5 characters")
+
     update_result = announcements_collection.update_one(
         {"_id": announcement_id},
         {
             "$set": {
-                "message": payload.message.strip(),
+                "message": message,
                 "starts_on": starts_on.isoformat() if starts_on else None,
                 "expires_on": expires_on.isoformat()
             }
