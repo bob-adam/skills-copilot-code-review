@@ -430,10 +430,11 @@ document.addEventListener("DOMContentLoaded", () => {
               const payload = await response.json();
               if (!response.ok) {
                 showAdminAnnouncementMessage(
-                  payload.detail || "Could not delete announcement.",
+                  "Could not delete announcement.",
                   "error"
                 );
                 return;
+              }
               }
 
               showAdminAnnouncementMessage(payload.message, "success");
