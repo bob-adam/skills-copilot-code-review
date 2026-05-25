@@ -823,3 +823,11 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
+.announcement-banner {
+  background-color: var(--success);
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-weight: bold;
+}
