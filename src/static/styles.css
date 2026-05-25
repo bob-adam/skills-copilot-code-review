@@ -795,6 +795,10 @@ footer {
   cursor: pointer;
   color: var(--text-secondary);
   line-height: 1;
+  background: transparent;
+  border: none;
+  padding: 0;
+  font: inherit;
 }
 
 @media (max-width: 767px) {
